@@ -19,16 +19,12 @@ function App() {
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
+        extraSectionContent={<Form />}
       />
-      <Form />
       <Section
         title="Lista zadań"
-        extraHeaderContent={
-          <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
-      />
-      <List
-        tasks={tasks}
-        hideDoneTasks={hideDoneTasks}
+        extraHeaderContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+        extraSectionContent={<List tasks={tasks} hideDoneTasks={hideDoneTasks} />}
       />
     </Main>
   );
