@@ -1,6 +1,4 @@
 .section {
-    display: grid;
-    grid-row-gap: 1px;
     margin: 10px 0 3px;
 }
 
