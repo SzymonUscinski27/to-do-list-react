@@ -3,22 +3,24 @@
 }
 
 .section__header {
-    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
     margin: 10px 0 3px 0;
-    font-size: 20px;
     background-color: white;
+}
+
+@media (max-width: 767px) {
+    .section__header {
+        grid-template-columns: 1fr;
+    }
 }
 
 .section__body {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 20px;
     align-items: center;
     background-color: white;
-}
-
-@media (max-width: 767px) {
-    .section__body {
-        grid-template-columns: 1fr;
-    }
 }
