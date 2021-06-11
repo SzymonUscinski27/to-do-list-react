@@ -1,22 +1,21 @@
 .buttons {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 20px;
-    grid-gap: 20px;
-}
-
-@media (max-width: 767px) {
-    .buttons {
-        grid-template-columns: 1fr;
-    }
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .buttons__button {
     background-color: white;
+    margin: 10px;
     color: hsl(180, 100%, 25%);
     border: none;
     transition: color 1s;
     cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .buttons__button {
+        flex-basis: 100%;
+    }
 }
 
 .buttons__button:hover {
