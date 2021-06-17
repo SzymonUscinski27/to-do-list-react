@@ -13,6 +13,10 @@ function App() {
     { id: 2, content: "zjeść obiad", done: true },
   ]);
 
+  const removeTask = (id) => {
+    setTasks(tasks => tasks.filter(task => task.id !== id));
+  };
+
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
   };
@@ -48,6 +52,7 @@ function App() {
             tasks={tasks}
             hideDone={hideDone}
             toggleTaskDone={toggleTaskDone}
+            removeTask={removeTask}
           />
         }
       />
