@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: auto 1fr auto;
     border-bottom: 1px solid #ddd;
-    padding: 5px;
+    padding: 10px 5px;
 }
 
 .list__item--hidden {
